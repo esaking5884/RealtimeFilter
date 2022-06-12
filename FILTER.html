@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>SLIDE SHOW</title>
+    <link rel="stylesheet" href="./FILTER.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=yes">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a class="headerTopLink" href="https://db.netkeiba.com/?pid=ranking_list&hr=ninki&sort=daily">みんなの競走馬ランキング（2022年6月12日現在）</a>
+      <ul class="headerLinks">
+        <li>
+          <a class="dummyLink" href="" onclick="dummyAlert()">CAL</a>
+        </li>
+        <li>
+          <a class="dummyLink" href="" onclick="dummyAlert()">SW</a>
+        </li>
+      </ul>
+    </div>
+    <section class="main">
+      <input type="text" placeholder="名前で検索">
+      <table>
+        <tbody>
+          <tr>
+            <td class="rank_order"><span>1位</span></td>
+            <td>
+              <p class="rank_horse"><a href="https://db.netkeiba.com/horse/2018104576/" title="ジャスティンカフェ">ジャスティンカフェ</a></p>
+            </td>
+            <td>
+              <p>牡4歳&nbsp;鹿毛&nbsp;栗東・安田翔伍</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>15,815人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>2位</span></td>
+            <td>
+              <p class="rank_horse"><a href="https://db.netkeiba.com/horse/2017110026/" title="ダーリントンホール">ダーリントンホール</a></p>
+            </td>
+            <td>
+              <p>牡5歳&nbsp;鹿毛&nbsp;美浦・木村哲也</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>14,387人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>3位</span></td>
+            <td>
+              <p class="rank_horse"><a href="https://db.netkeiba.com/horse/2016104772/" title="ザダル">ザダル</a></p>
+            </td>
+            <td>
+              <p>牡6歳&nbsp;栗毛&nbsp;美浦・大竹正博</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>13,293人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>4位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2018100184/" title="タイムトゥヘヴン">タイムトゥヘヴン</a></p>
+            </td>
+            <td>
+      	       <p>牡4歳&nbsp;鹿毛&nbsp;美浦・戸田博文</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>12,615人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>5位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2018102348/" title="ノースブリッジ">ノースブリッジ</a></p>
+            </td>
+            <td>
+      	       <p>牡4歳&nbsp;鹿毛&nbsp;美浦・奥村武</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>11,775人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>6位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2019103753/" title="ナムラクレア">ナムラクレア</a></p>
+            </td>
+            <td>
+      	       <p>牝3歳&nbsp;青鹿毛&nbsp;栗東・長谷川浩大</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>11,546人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>7位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2016104791/" title="シャドウディーヴァ">シャドウディーヴァ</a></p>
+            </td>
+            <td>
+      	       <p>牝6歳&nbsp;黒鹿毛&nbsp;美浦・斎藤誠</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>11,350人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>8位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2018102020/" title="ヤマニンサンパ">ヤマニンサンパ</a></p>
+            </td>
+            <td>
+      	       <p>牡4歳&nbsp;芦毛&nbsp;栗東・斉藤崇史</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>10,472人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>9位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2017105082/" title="ヴェラアズール">ヴェラアズール</a></p>
+            </td>
+            <td>
+      	       <p>牡5歳&nbsp;青毛&nbsp;栗東・渡辺薫彦</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>10,315人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>10位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2020102817/" title="マラキナイア">マラキナイア</a></p>
+            </td>
+            <td>
+      	       <p>牝2歳&nbsp;黒鹿毛&nbsp;栗東・吉岡辰弥</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>10,083人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>11位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2020103417/" title="ダノンザタイガー">ダノンザタイガー</a></p>
+            </td>
+            <td>
+      	       <p>牡2歳&nbsp;黒鹿毛&nbsp;美浦・国枝栄</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>9,646人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>12位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2017101832/" title="ビアンフェ">ビアンフェ</a></p>
+            </td>
+            <td>
+      	       <p>セ5歳&nbsp;鹿毛&nbsp;栗東・中竹和也</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,975人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>13位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2018100032/" title="シゲルピンクルビー">シゲルピンクルビー</a></p>
+            </td>
+            <td>
+      	       <p>牝4歳&nbsp;栗毛&nbsp;栗東・渡辺薫彦</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,899人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>14位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2020103708/" title="コンエネルジア">コンエネルジア</a></p>
+            </td>
+            <td>
+      	       <p>牡2歳&nbsp;鹿毛&nbsp;美浦・手塚貴久</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,868人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>15位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2019104911/" title="プルパレイ">プルパレイ</a></p>
+            </td>
+            <td>
+      	       <p>牡3歳&nbsp;鹿毛&nbsp;栗東・須貝尚介</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,828人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>16位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2019105658/" title="オタルエバー">オタルエバー</a></p>
+            </td>
+            <td>
+      	       <p>牡3歳&nbsp;黒鹿毛&nbsp;栗東・中竹和也</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,529人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>17位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2017100434/" title="ヴェントヴォーチェ">ヴェントヴォーチェ</a></p>
+            </td>
+            <td>
+      	       <p>牡5歳&nbsp;鹿毛&nbsp;栗東・牧浦充徳</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,468人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>18位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2016106518/" title="トーラスジェミニ">トーラスジェミニ</a></p>
+            </td>
+            <td>
+      	       <p>牡6歳&nbsp;鹿毛&nbsp;美浦・小桧山悟</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,209人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>19位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2018105223/" title="モンファボリ">モンファボリ</a></p>
+            </td>
+            <td>
+      	       <p>牝4歳&nbsp;鹿毛&nbsp;栗東・須貝尚介</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>8,157人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+          <tr>
+            <td class="rank_order"><span>20位</span></td>
+            <td>
+            	<p class="rank_horse"><a href="https://db.netkeiba.com/horse/2018105264/" title="ボーデン">ボーデン</a></p>
+            </td>
+            <td>
+      	       <p>牡4歳&nbsp;鹿毛&nbsp;美浦・木村哲也</p>
+            </td>
+            <td>
+              <div class="access">
+                アクセス数：<strong>7,719人</strong>
+              </div><!-- /.access -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script type="text/javascript" src="./FILTER.js" charset="utf-8"></script>
+  </body>
+</html>
